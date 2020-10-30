@@ -22,7 +22,7 @@ def branch():
     shelly.right(90)
     shelly.forward(90)
 
-
+# testing stuff
 for k in range(8):
     branch()
     shelly.left(45)
