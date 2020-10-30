@@ -10,9 +10,13 @@ shelly.color("cyan")
 
 
 def branch():
-    for i in range(3):
+    i = 0
+    while i < 3:
+        i += 1
         shelly.color(random.choice(colors))
-        for j in range(3):
+        j = 0
+        while j < 3:
+            j += 1
             shelly.forward(30)
             shelly.backward(30)
             shelly.right(45)
@@ -22,7 +26,8 @@ def branch():
     shelly.right(90)
     shelly.forward(90)
 
-# testing stuff
-for k in range(8):
+k = 0
+while k < 8:
+    k += 1
     branch()
     shelly.left(45)
